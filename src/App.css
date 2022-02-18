@@ -1,38 +1,72 @@
-.App {
-  text-align: center;
+.app {
+    display: flex;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.sidebar {
+    height: 100vh;
+    width: 25%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.sidebar_form {
+    padding: 20px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.sidebar_form input {
+    padding: 15px 10px;
+    border: 1px solid black;
+    border-radius: 5px;
+    width: 100%;
+    text-transform: uppercase;
+}
+.sidebar_form button {
+    margin-left: 5px; 
+    padding: 15px 20px 15px 20px;
+    color: white;
+    border-radius: 5px;
+    background: black;
+    transition: all .3s;
+    width: 100%;
+    margin-top: 10px;
+    margin-left: 0;
 }
 
-.App-link {
-  color: #61dafb;
+.sidebar_form button:hover {
+    background: rgba(0, 0, 0, 0.678);
+    color: white;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.sidebar_result {
+    height: calc(100vh - 144px);
+    overflow-y: auto;
+    padding: 20px;
+    
+}
+
+.sidebar_item {
+    margin-bottom: 20px;
+    padding: 15px;
+    border: 1px solid black;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.sidebar_item:last-child {
+    margin-bottom: 0;
+}
+
+.sidebar_item > h2 {
+    font-size: 18px;
+    margin-bottom: 15px;
+    transition: all .3s;
+}
+
+.sidebar_item > p {
+    text-transform: uppercase;
+    font-style: italic;
+
+}
+
+.map {
+    width: 75%;
+    height: 100vh;
 }
